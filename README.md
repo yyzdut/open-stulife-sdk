@@ -2,7 +2,7 @@
 
 ## 0. 简介
 
-> 如题所示，此项目为一个 对 BBSer and ecnuer 免费开放的开源项目，未来的发展方向是做面向企业端的各种SDK，发展设想在[Future-development](https://github.com/ModestYjx/open-bbs-sdk#3-future-development),功能介绍在[Features](https://github.com/ModestYjx/open-bbs-sdk#2-feature)
+> 如题所示，此项目为一个 对 BBSer and ecnuer 免费开放的开源项目，未来的发展方向是做面向企业端的各种SDK，发展设想在[Future-development](https://github.com/ModestYjx/open-bbs-sdk#3-future-development)，功能介绍在[Features](https://github.com/ModestYjx/open-bbs-sdk#2-feature)
 。
 
 > github：https://github.com/Cheer-for-fun/open-bbs-sdk
