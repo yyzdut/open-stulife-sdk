@@ -11,7 +11,25 @@ const App = () => {
 	const [csdnVisible, setCsdnVisible] = useState(true);
 	const [current, setCurrent] = useState("1");
 
-	
+	const male = () => {
+		return (
+			<img src="https://img.icons8.com/color/48/000000/male.png" alt='' className="icon-img" />)
+	}
+
+	const female = () => {
+		return (
+			<img src="https://img.icons8.com/color-glass/48/000000/female.png" alt='' className="icon-img" />
+		)
+	}
+
+	const Contributors = () => {
+		return (
+			<div className="contributors">
+				Contributors: {male()}@ModestYjx,{female()}@Weiyan.Shi,{male()}@nzcer,{male()}@JackCheng@,@
+				{male()}yyzdut,{female()}@dfdg777
+			</div>
+		)
+	}
 
 	const LeftMenu = () => {
 		return (
@@ -46,11 +64,11 @@ const App = () => {
 			<PageHeader
 				className="site-page-header"
 				title="Welcome!"
-				subTitle="By Yjx"
+				subTitle={<Contributors />}
 			/>
 			<div className="main-wrapper">
 				<LeftMenu />
-				{csdnVisible?<Csdn />:<Codimd />}
+				{csdnVisible ? <Csdn /> : <Codimd />}
 			</div>
 		</div>
 	);
