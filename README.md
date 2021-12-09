@@ -1,11 +1,11 @@
-# open-bbs-sdk
+# open-stulife-sdk
 
 ## 0. 简介
 
-> 如题所示，此项目为一个 对 BBSer and ecnuer 免费开放的开源项目，未来的发展方向是做面向企业端的各种SDK，发展设想在[Future-development](https://github.com/ModestYjx/open-bbs-sdk#3-future-development)，功能介绍在[Features](https://github.com/ModestYjx/open-bbs-sdk#2-feature)
+> 如题所示，此项目为一个 对 BBSer, ecnuer and scuter免费开放的开源项目，目前聚焦于解决大学生学习生活中的各种各种困难，未来的发展方向是做一整套学生生活、学习与创业等各项服务的SDK，发展设想在[Future-development](https://github.com/ModestYjx/open-stulife-sdk#3-future-development)，功能介绍在[Features](https://github.com/ModestYjx/open-stulife-sdk#2-feature)
 。
 
-> github：https://github.com/Cheer-for-fun/open-bbs-sdk
+> github：https://github.com/Cheer-for-fun/open-stulife-sdk
 
 > 体验网址：http://39.103.166.167/
 
@@ -20,7 +20,7 @@
 | ------------------------------------------------------------ | ---- |
 | 1. csdn free download for BBS user                           | done |
 | 2. codimd free(在线文档协作工具)                             | done |
-| 3. BBSer 互帮互助需求分享与满足系统，如找开发队友、赛友系统（正在开发） | ing  |
+| 3. BBSer 互帮互助需求分享与满足系统，如活动发布、寻找队友与赛友、考试资料分享（正在开发） | ing  |
 | 4. xmind文件转md                                             | will |
 | 5. 后台管理系统（待实现）                                    | will |
 | 6. 网站访问次数（待实现）                                    | will |

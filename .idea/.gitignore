@@ -10,3 +10,5 @@
 *application.yml
 # 生成文件
 ../target
+../ops/deploy.sh
+../src/main/resources/application.yml
