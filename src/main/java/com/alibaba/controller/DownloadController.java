@@ -9,6 +9,8 @@ package com.alibaba.controller;
 import com.alibaba.bean.Download;
 import com.alibaba.bean.Result;
 import com.alibaba.service.DownloadService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,11 +21,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @RestController
+@Api(tags = "Download 业务")
 public class DownloadController {
 
     @Autowired
     private DownloadService downloadService;
 
+    @ApiOperation(value = "下载接口")
     @PostMapping(value = "/submit")
     public Result downloadFile(@RequestBody Download download) {
         Date date = new Date();   // 获取当前时间
