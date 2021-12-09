@@ -3,7 +3,6 @@ import { Input, Select, Button, Form, Alert, message } from 'antd';
 import { SmileTwoTone } from "@ant-design/icons";
 import { httpPost } from './http';
 import "./App.css";
-import { responsiveArray } from 'antd/lib/_util/responsiveObserve';
 
 const { Option } = Select;
 
@@ -32,10 +31,11 @@ const Csdn = () => {
 	}
 
 	const selectAfter = (
-		<Select defaultValue="pku.edu.cn" className="select-after" onChange={(e) => { setSchool(e) }}>
-			<Option value="pku.edu.cn">pku.edu.cn</Option>
-			<Option value="thu.edu.cn">thu.edu.cn</Option>
-			<Option value="ruc.edu.cn">ruc.edu.cn</Option>
+		<Select defaultValue="@stu.pku.edu.cn" className="select-after" onChange={(e) => { setSchool(e) }}>
+			<Option value="@stu.pku.edu.cn">@stu.pku.edu.cn</Option>
+			<Option value="@pku.edu.cn">@pku.edu.cn</Option>
+			<Option value="@thu.edu.cn">@thu.edu.cn</Option>
+			<Option value="@ruc.edu.cn">@ruc.edu.cn</Option>
 		</Select>
 	);
 

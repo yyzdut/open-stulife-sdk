@@ -11,11 +11,12 @@
 }
 
 .ant-page-header-heading-title{
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .ant-page-header-heading-sub-title{
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 .main-wrapper{
@@ -97,9 +98,15 @@
 }
 
 .ant-select-selection-item{
-	width: 100px;
+	width: 150px;
 }
 
 .ant-select{
 	width: 50px;
+}
+
+.icon-img{
+  margin-bottom: 5px;
+  width: 20px;
+  height: 20px;
 }
