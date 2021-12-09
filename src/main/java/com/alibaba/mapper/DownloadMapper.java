@@ -7,7 +7,9 @@ package com.alibaba.mapper;
  */
 
 import com.alibaba.bean.Download;
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Options;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -17,9 +19,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface DownloadMapper {
 
-    @Insert("insert into user values(#{id},#{address},#{email})")
+    @Insert("insert into csdn_download values(#{id},#{address},#{email},#{submit_time})")
     //加入该注解可以保存对象后，查看对象插入id
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
-    void regist(Download download);
+    void download(Download download);
 
 }

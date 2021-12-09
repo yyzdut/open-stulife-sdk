@@ -10,7 +10,6 @@ import com.alibaba.bean.Download;
 import com.alibaba.bean.Result;
 import com.alibaba.mapper.DownloadMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -26,7 +25,7 @@ public class DownloadService {
         result.setSuccess(false);
         result.setDetail(null);
         try {
-            downloadMapper.regist(download);
+            downloadMapper.download(download);
             System.out.println(download.getId());
             result.setMsg("提交成功，1个工作日之内发送完毕。");
             result.setSuccess(true);

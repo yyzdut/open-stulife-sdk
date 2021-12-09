@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-register-master" />
-        <module name="open-bbs" />
+        <module name="open-stulife-sdk" />
         <module name="springboot-login-master" />
         <module name="springboot-login" />
       </profile>

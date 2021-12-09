@@ -10,6 +10,7 @@ public class Download {
     private Long id;
     private String address;
     private String email;
+    private String submit_time;
 
     public Long getId() {
         return id;
@@ -33,5 +34,13 @@ public class Download {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getSubmit_time() {
+        return submit_time;
+    }
+
+    public void setSubmit_time(String submit_time) {
+        this.submit_time = submit_time;
     }
 }
