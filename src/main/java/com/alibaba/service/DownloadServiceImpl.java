@@ -7,6 +7,7 @@ package com.alibaba.service;
  */
 
 import com.alibaba.bean.Download;
+import com.alibaba.bean.RequirementMeet;
 import com.alibaba.bean.Result;
 import com.alibaba.mapper.DownloadMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional(rollbackFor = RuntimeException.class)
-public class DownloadService {
+public class DownloadServiceImpl {
 
     @Autowired
     private DownloadMapper downloadMapper;
@@ -35,5 +36,9 @@ public class DownloadService {
             e.printStackTrace();
         }
         return result;
+    }
+
+    public Result findAll(RequirementMeet requirementMeet) {
+        return null;
     }
 }

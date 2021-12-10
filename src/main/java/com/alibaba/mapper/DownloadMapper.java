@@ -19,7 +19,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface DownloadMapper {
 
-    @Insert("insert into csdn_download values(#{id},#{address},#{email},#{submit_time})")
+    @Insert("insert into csdn_download_table values(#{id},#{address},#{email},#{submit_time})")
     //加入该注解可以保存对象后，查看对象插入id
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     void download(Download download);
