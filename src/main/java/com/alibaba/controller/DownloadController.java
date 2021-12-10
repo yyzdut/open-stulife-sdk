@@ -8,7 +8,7 @@ package com.alibaba.controller;
 
 import com.alibaba.bean.Download;
 import com.alibaba.bean.Result;
-import com.alibaba.service.DownloadService;
+import com.alibaba.service.DownloadServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,9 @@ import java.util.Date;
 public class DownloadController {
 
     @Autowired
-    private DownloadService downloadService;
+    private DownloadServiceImpl downloadServiceImpl;
+
+
 
     @ApiOperation(value = "下载接口")
     @PostMapping(value = "/submit")
@@ -37,7 +39,7 @@ public class DownloadController {
         String value = dateFormat.format(sql_date);
         download.setSubmit_time(value);
 
-        return downloadService.downloadFile(download);
+        return downloadServiceImpl.downloadFile(download);
     }
 }
 
