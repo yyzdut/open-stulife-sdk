@@ -1,5 +1,7 @@
 package com.alibaba.bean;
 
+import javax.persistence.*;
+
 /**
  * @Author: ModestYjx
  * @Project: open-stulife-sdk
@@ -7,8 +9,14 @@ package com.alibaba.bean;
  * @Version: 1.0.0
  * @Date: 2021/12/10 10:09
  */
+@Table(name="requirement_table")
+@Entity
 public class RequirementMeet {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false)
     private Long id;
+
     private Long promoter_id;
     private String activity_name;
     private String activity_des;
@@ -24,6 +32,7 @@ public class RequirementMeet {
     public void setId(Long id) {
         this.id = id;
     }
+
 
     public Long getPromoter_id() {
         return promoter_id;

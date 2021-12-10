@@ -1,5 +1,7 @@
 package com.alibaba.bean;
 
+import javax.persistence.*;
+
 /**
  * @Author: ModestYjx
  * @Project: open-stulife-sdk
@@ -7,7 +9,12 @@ package com.alibaba.bean;
  * @Version: 1.0.0
  * @Date: 2021/12/10 10:17
  */
+@Table(name="user_body_table")
+@Entity
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false)
     private Long id;
     private String username;
     private String password;

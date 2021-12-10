@@ -1,5 +1,6 @@
 package com.alibaba.dao;
 
+import com.alibaba.bean.RequirementMeet;
 import com.alibaba.bean.VisitedData;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -10,5 +11,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @Version: 1.0.0
  * @Date: 2021/12/10 10:21
  */
-public interface RequirementMeet extends JpaRepository<VisitedData, Long> {
+public interface RequirementMeetRespority extends JpaRepository<RequirementMeet, Long> {
 }
