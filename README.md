@@ -13,8 +13,8 @@
 
 1. 配置数据库，参考[database.md](./doc/database.md)。
 2. 运行src/main/java/com/alibaba/Application.java即可。
-3. 若要提交PR，请参照[pull request](doc/pull request.md)。
-4. 若提交issue，请参照[]
+3. 若要提交PR，请参照[pull request](doc/pull-request.md)。
+4. 若提交issue，请参照[how-to-propose-a-issue](doc/how-to-propose-a-issue.md)。
 ## 2. Features
 
 | features                                                     | 状态 |
