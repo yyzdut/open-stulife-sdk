@@ -24,7 +24,6 @@ import java.util.Date;
 @Api(tags = "Download 业务")
 public class DownloadController {
 
-
     @Autowired
     private DownloadServiceImpl downloadServiceImpl;
 
