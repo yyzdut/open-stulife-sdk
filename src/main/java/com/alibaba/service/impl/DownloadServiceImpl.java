@@ -1,4 +1,4 @@
-package com.alibaba.service;
+package com.alibaba.service.impl;
 /**
  * @Author: ModestYjx
  * @Description:
@@ -38,7 +38,5 @@ public class DownloadServiceImpl {
         return result;
     }
 
-    public Result findAll(RequirementMeet requirementMeet) {
-        return null;
-    }
+
 }
