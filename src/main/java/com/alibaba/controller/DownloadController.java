@@ -8,7 +8,7 @@ package com.alibaba.controller;
 
 import com.alibaba.bean.Download;
 import com.alibaba.bean.Result;
-import com.alibaba.service.DownloadServiceImpl;
+import com.alibaba.service.impl.DownloadServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
