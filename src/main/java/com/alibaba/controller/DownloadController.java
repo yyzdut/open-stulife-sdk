@@ -28,7 +28,7 @@ public class DownloadController {
     private DownloadServiceImpl downloadServiceImpl;
 
 
-    
+
     @ApiOperation(value = "下载接口")
     @PostMapping(value = "/submit")
     public Result downloadFile(@RequestBody Download download) {
